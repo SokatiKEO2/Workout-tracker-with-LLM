@@ -1,7 +1,6 @@
-import os
-from dotenv import load_dotenv, find_dotenv
-load_dotenv()
-APP_ID = os.getenv("APP_ID")
-API_KEY = os.getenv("API_KEY")
+from dotenv import dotenv_values
+import requests
 
-print(APP_ID)
+
+SECRET_API = dotenv_values(".env.dev")
+
