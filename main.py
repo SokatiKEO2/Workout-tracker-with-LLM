@@ -8,7 +8,7 @@ exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 
 exercise_text = input("Tell me what exercise you did: ")
 weight = 78
-height = 172
+height = None
 age = 20
 
 headers = {
@@ -18,7 +18,7 @@ headers = {
 
 parameters = {
     "query" : exercise_text,
-    "weight_kg" : weight,
+    "weight_kg" : None,
     "height_cm" : height,
     "age" : age,
 }
